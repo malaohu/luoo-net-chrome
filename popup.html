@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>落网 - 独立音乐推荐</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="width: 600px; height: 400px;">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">
+                    落网
+                </a>
+                <p class="navbar-text">独立音乐推荐 - <a href="http://51.ruyo.net"> 如有乐享</a>博客制作</p>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-2">
+                <div class="btn-group btn-group-xs" role="group">
+                    <button class="btn btn-default" id="btn_play">play</button>
+                    <button class="btn btn-default" id="btn_stop">stop</button>
+                </div>
+            </div>
+            <div class="col-xs-10">
+                <span id="labAd">比较喜欢落网期刊，特意做成Chrome扩展方便听歌</span>
+            </div>
+        </div> 
+        <hr>
+        <div class="row" id="div_list">
+             <h1>loading ... ...</h1>
+        </div>
+        <div class="row">
+            <center><a class="btn btn-default btn-md" id="btn_load_more">>>>点击这里加载更多期刊<<<</a></center>
+        </div>
+        <br />
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fun.js"></script>
+    <script src="js/core.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+</html>
