@@ -34,6 +34,13 @@ Blog    :   http://51.RUYO.net
     $('#btn_play').click(function () {
         replay();
     });
+    $("#openruyo").click(function(){
+        var href = $(this).attr("href");
+        chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+            var tab = tabs[0];
+            chrome.tabs.update(tab.id, {url: href});
+        });
+    });
     function init(p) {
         RuYo.music.fun.requestAsync("http://www.luoo.net/tag/?p=" + p, null, function (data) {
             var reg = /<div\s+class="item">\s*<a\shref="[^\d]+(\d+)"[^>]*>\s*<img\s*src="([^"]+)"[^>]*>\s*<\/a>\s*<div\sclass="meta rounded clearfix">\s*<a[^>]*title="([^"]+)"[^>]*>/g;
@@ -45,7 +52,7 @@ Blog    :   http://51.RUYO.net
     }
 
     function paly(id, txt) {
-        RuYo.music.luonet.getTracks("http://m.luoo.net/vols/" + id, function (err, data) {
+        RuYo.music.luonet.getTracks("https://m.luoo.net/vols/" + id, function (err, data) {
             if (err)
                 alert(err);
             else

@@ -32,7 +32,7 @@ RuYo.music.luonet = {};
         });
     }
     function getSong(id,pretext){
-        var url = 'http://m.luoo.net/api/songs/' + id;
+        var url = 'https://m.luoo.net/api/songs/' + id;
         var jsn = RuYo.music.fun.request(url,null);
         jsn = JSON.parse(jsn);
         return {"title":jsn.name + pretext,"mp3":jsn.url.full};
