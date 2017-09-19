@@ -2,11 +2,11 @@
 	"manifest_version": 2,
 	"name": "落网 - 独立音乐推荐",
 	"description": "落网(luoo.net)是一个推荐国内外独立音乐的网站，我们致力于推荐这个时代里最朴素、最有质感的声音，让更多的独立文化作品得到更好的传播。（非官方出品）博客：http://51.RUYO.NET",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"icons": { "16": "images/16.png",
            "48": "images/48.png",
           "128": "images/128.png" },
-	"permissions": ["webRequest","tabs","http://*/*","background"],
+	"permissions": ["webRequest","tabs","http://*.luoo.net/*","https://*.luoo.net/*","background"],
 	"browser_action": {
 	    "default_icon": "images/64x.png" ,
 	    "default_title": "落网 - 独立音乐推荐",
